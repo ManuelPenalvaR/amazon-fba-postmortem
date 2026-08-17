@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer intento con Amazon FBA | Post-mortem constructivo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #222;
+            background: #f4f5f7;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 70px 20px;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #374151;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 19px;
+            color: #d1d5db;
+            max-width: 750px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 27px;
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #374151;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+
+        li {
+            margin-bottom: 9px;
+        }
+
+        .highlight {
+            background: #eef2ff;
+            border-left: 5px solid #4f46e5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .warning {
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .success {
+            background: #ecfdf5;
+            border-left: 5px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f3f4f6;
+        }
+
+        .number {
+            font-weight: bold;
+            color: #4f46e5;
+        }
+
+        a {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 650px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 25px 20px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <span class="tag">Mentalidad de crecimiento · Post-mortem constructivo</span>
+
+        <h1>Lo que aprendí de mi primer intento con Amazon FBA</h1>
+
+        <p class="subtitle">
+            Una reflexión sobre producto, precio, publicidad, toma de decisiones
+            y aprendizaje a partir de mi primera experiencia vendiendo en Estados Unidos
+            desde México.
+        </p>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>1. Contexto</h2>
+
+        <p>
+            Mi primera experiencia con Amazon FBA surgió con la intención de vender
+            un producto en Estados Unidos mientras yo vivía en México.
+        </p>
+
+        <p>
+            Después de investigar diferentes opciones, decidí desarrollar un bundle
+            compuesto por una botella de borosilicato, una cubierta de bambú y un
+            infusor para té. La propuesta buscaba permitir transportar bebidas frías
+            o calientes de una manera práctica y resistente.
+        </p>
+
+        <p>
+            El producto fue fabricado en China y enviado posteriormente a Estados
+            Unidos para ser comercializado mediante Amazon FBA.
+        </p>
+
+        <div class="highlight">
+            <strong>Objetivo inicial:</strong>
+            validar un producto con potencial comercial y generar ventas en el
+            mercado estadounidense.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>2. El problema</h2>
+
+        <p>
+            La investigación inicial me permitió identificar que existía interés
+            por productos relacionados con el consumo de té y accesorios similares.
+            Sin embargo, posteriormente descubrí que validar la existencia de un
+            mercado no era suficiente para garantizar la viabilidad económica del
+            negocio.
+        </p>
+
+        <p>
+            El pedido inicial fue de <strong>150 unidades</strong>. El costo unitario,
+            incluyendo fabricación, transporte marítimo e impuestos considerados
+            para la operación, fue de aproximadamente <strong>$7.38 USD</strong>.
+        </p>
+
+        <p>
+            Desde la realización del pedido hasta que el inventario llegó a Estados
+            Unidos transcurrieron aproximadamente <strong>2 a 3 meses</strong>,
+            considerando fabricación y transporte.
+        </p>
+
+        <p>
+            Al calcular el precio de venta cometí uno de los principales errores del
+            proyecto. Establecí un precio de aproximadamente <strong>$35 USD</strong>
+            buscando cubrir los costos del producto, publicidad, reinversión y
+            obtener una ganancia personal.
+        </p>
+
+        <div class="warning">
+            <strong>El problema:</strong>
+            mi análisis se enfocó demasiado en cuánto necesitaba cobrar para que el
+            negocio fuera rentable y no lo suficiente en cuánto estaba realmente
+            dispuesto a pagar el mercado por ese producto.
+        </div>
+
+        <h3>Otros factores que afectaron el resultado</h3>
+
+        <ul>
+            <li>El producto tardó varios meses en llegar al mercado.</li>
+            <li>El precio terminó siendo elevado frente a alternativas existentes.</li>
+            <li>La cuenta y el volumen de ventas no justificaban determinados costos mensuales.</li>
+            <li>Tenía poca experiencia utilizando publicidad de Amazon.</li>
+            <li>La publicidad automática generó impresiones, pero pocas conversiones.</li>
+            <li>El producto obtuvo muy pocas ventas y ninguna reseña orgánica durante el periodo analizado.</li>
+            <li>El contexto económico y comercial también cambió durante el periodo.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>3. Resultados obtenidos</h2>
+
+        <p>
+            Durante aproximadamente seis meses conseguí alrededor de
+            <strong>21 ventas</strong>. Solamente se produjo una devolución,
+            relacionada con la rotura del filtro de té, y el producto fue reemplazado.
+        </p>
+
+        <p>
+            Sin embargo, el volumen de ventas no fue suficiente para sostener la
+            operación. También contraté una suscripción de vendedor de aproximadamente
+            <strong>$50 USD mensuales</strong>, esperando que el mayor volumen de
+            ventas permitiera aprovechar sus beneficios y reducir costos.
+        </p>
+
+        <p>
+            Al no alcanzar el volumen esperado, se acumularon aproximadamente
+            <strong>$300 USD</strong> en suscripciones durante seis meses.
+        </p>
+
+        <p>
+            Finalmente decidí retirar el inventario de Amazon. Debido a que en ese
+            momento no vivía en Estados Unidos ni contaba con una dirección propia
+            para recibirlo, un conocido permitió que el inventario restante fuera
+            enviado a su domicilio.
+        </p>
+
+        <div class="highlight">
+            De las 150 unidades iniciales, actualmente permanecen aproximadamente
+            <strong>125 unidades</strong> almacenadas en Estados Unidos. Cuatro
+            unidades se perdieron durante el proceso.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>4. Acciones y post-mortem constructivo</h2>
+
+        <p>
+            En lugar de interpretar la experiencia únicamente como un fracaso,
+            decidí analizar qué decisiones estuvieron bajo mi control y qué
+            factores fueron externos.
+        </p>
+
+        <h3>Lo que funcionó</h3>
+
+        <ul>
+            <li>Realicé una investigación inicial del producto y del mercado.</li>
+            <li>Logré fabricar y transportar el producto internacionalmente.</li>
+            <li>Conseguí operar una venta real en el mercado estadounidense.</li>
+            <li>Logré aproximadamente 21 ventas.</li>
+            <li>La tasa de devoluciones fue baja durante el periodo.</li>
+            <li>Resolví problemas logísticos incluso viviendo en otro país.</li>
+        </ul>
+
+        <h3>Lo que debía mejorar</h3>
+
+        <ul>
+            <li>Validar el precio antes de comprometer capital.</li>
+            <li>Analizar la rentabilidad completa antes de realizar el pedido.</li>
+            <li>Definir criterios claros para continuar, modificar o abandonar el proyecto.</li>
+            <li>Aprender publicidad antes de asignar una parte importante del presupuesto.</li>
+            <li>Evitar costos fijos que no correspondían al volumen real de ventas.</li>
+            <li>Diseñar un plan para liquidar inventario si las ventas no alcanzaban determinados objetivos.</li>
+        </ul>
+
+        <div class="success">
+            <strong>Aprendizaje principal:</strong>
+            validar que existe demanda no es suficiente. También es necesario validar
+            que existe demanda a un precio que permita que el negocio sea rentable.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>5. Decisiones: antes vs. ahora</h2>
+
+        <table>
+            <tr>
+                <th>Decisión</th>
+                <th>Lo que pensaba entonces</th>
+                <th>Lo que entiendo ahora</th>
+            </tr>
+
+            <tr>
+                <td>Validar el producto</td>
+                <td>Si existe mercado, el producto tiene potencial.</td>
+                <td>La existencia de demanda no garantiza rentabilidad.</td>
+            </tr>
+
+            <tr>
+                <td>Precio de $35 USD</td>
+                <td>El precio parecía razonable considerando el producto y el mercado estadounidense.</td>
+                <td>Debía validar la disposición real a pagar y compararla con la competencia.</td>
+            </tr>
+
+            <tr>
+                <td>Publicidad automática</td>
+                <td>Amazon podía encontrar compradores utilizando sus algoritmos.</td>
+                <td>La publicidad necesita objetivos, medición, optimización y conocimiento del embudo.</td>
+            </tr>
+
+            <tr>
+                <td>Suscripción mensual</td>
+                <td>El costo tendría sentido si conseguía vender más de diez unidades al mes.</td>
+                <td>Primero debía validar el volumen de ventas antes de asumir un costo fijo.</td>
+            </tr>
+
+            <tr>
+                <td>Inventario</td>
+                <td>Esperaba vender las unidades gradualmente.</td>
+                <td>Necesitaba establecer un límite de tiempo y un plan de liquidación.</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <section>
+        <h2>6. Feedback radicalmente sincero</h2>
+
+        <p>
+            Uno de los comentarios que recibí posteriormente fue que el precio de
+            aproximadamente $35 USD podía resultar elevado para una botella.
+        </p>
+
+        <p>
+            En ese momento mi razonamiento parecía lógico: aproximadamente equivalía
+            a $700 MXN y el producto estaba compuesto por borosilicato, bambú e
+            incluía un infusor. Además, estaba dirigido al mercado estadounidense,
+            donde esperaba que el poder adquisitivo permitiera justificar ese precio.
+        </p>
+
+        <p>
+            Sin embargo, con perspectiva, entendí que mi razonamiento estaba
+            demasiado centrado en justificar el precio desde las características
+            del producto y desde mis propios costos.
+        </p>
+
+        <div class="highlight">
+            <strong>La pregunta que debí hacerme era diferente:</strong>
+            "¿Existe suficiente cantidad de clientes dispuestos a pagar este precio
+            por esta propuesta de valor?"
+        </div>
+
+        <p>
+            También desarrollé una reflexión personal sobre el inventario restante.
+            En retrospectiva, posiblemente habría sido mejor establecer un precio
+            de liquidación, incluso cercano a $20 USD o menos, para recuperar parte
+            del capital y liberar recursos, en lugar de mantener el inventario
+            esperando una venta que podía no llegar.
+        </p>
+
+        <p>
+            Esta reflexión fue incómoda porque implicaba aceptar que recuperar la
+            inversión inicial no debía ser el único criterio para tomar decisiones
+            posteriores.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>7. Aprendizajes y mentalidad de crecimiento</h2>
+
+        <p>
+            La experiencia cambió mi forma de entender un emprendimiento.
+            Inicialmente pensaba principalmente en encontrar un producto con
+            demanda y llevarlo al mercado.
+        </p>
+
+        <p>
+            Ahora entiendo que emprender también implica trabajar con hipótesis,
+            experimentar, medir resultados y modificar decisiones cuando la
+            evidencia demuestra que una idea no funciona como esperaba.
+        </p>
+
+        <h3>Mi principal cambio de mentalidad</h3>
+
+        <div class="success">
+            <p>
+                <strong>Antes:</strong> "Encontré un producto con mercado, por lo
+                tanto puedo venderlo."
+            </p>
+
+            <p>
+                <strong>Ahora:</strong> "Tengo una hipótesis sobre un producto,
+                precio y mercado. Necesito validarla con el menor riesgo posible
+                antes de comprometer más capital."
+            </p>
+        </div>
+
+        <h3>Qué haría diferente actualmente</h3>
+
+        <ul>
+            <li>Validaría el precio antes de realizar una compra grande.</li>
+            <li>Calcularía el margen real incluyendo todos los costos.</li>
+            <li>Probaría primero con una cantidad de capital que pueda asumir perder.</li>
+            <li>Definiría indicadores mínimos de éxito antes de continuar.</li>
+            <li>Establecería un punto de salida o liquidación.</li>
+            <li>Aprendería los fundamentos de publicidad antes de invertir en ella.</li>
+            <li>Analizaría el costo de adquisición y la conversión antes de aumentar presupuesto.</li>
+        </ul>
+    </section>
+
+
+    <section>
+        <h2>8. Conclusión</h2>
+
+        <p>
+            Mi primera experiencia con Amazon FBA no produjo el resultado económico
+            que esperaba. Sin embargo, considero que fue una experiencia de
+            aprendizaje importante porque convirtió conceptos que parecían
+            abstractos en decisiones con consecuencias reales.
+        </p>
+
+        <p>
+            El mayor aprendizaje no fue simplemente que el producto no funcionó.
+            Fue comprender que un emprendimiento debe validarse desde diferentes
+            perspectivas: producto, mercado, precio, margen, adquisición, logística
+            y riesgo.
+        </p>
+
+        <p>
+            El proyecto también me enseñó que un resultado negativo no tiene que
+            representar el final del aprendizaje. Puede convertirse en información
+            para tomar mejores decisiones en el siguiente intento.
+        </p>
+
+        <div class="highlight">
+            <strong>La mentalidad de crecimiento que me llevo:</strong>
+            no necesito acertar a la primera; necesito aprender rápido, medir lo
+            que sucede y utilizar esa información para tomar una mejor decisión
+            la próxima vez.
+        </div>
+    </section>
+
+
+    <section>
+        <h2>9. Evidencia de control de versiones</h2>
+
+        <p>
+            Este post-mortem fue documentado mediante un repositorio público de
+            GitHub, utilizando control de versiones para registrar la evolución
+            de la documentación.
+        </p>
+
+        <ul>
+            <li>
+                <a href="https://github.com/ManuelPenalvaR/amazon-fba-postmortem"
+                   target="_blank">
+                    Repositorio público en GitHub
+                </a>
+            </li>
+
+            <li>
+                El historial de commits permite observar las diferentes versiones
+                utilizadas durante la construcción de esta entrada.
+            </li>
+        </ul>
+
+        <p>
+            Los commits posteriores documentarán la incorporación del contenido,
+            la reflexión sobre mentalidad de crecimiento y la versión final
+            publicada.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>10. Checklist de entrega</h2>
+
+        <ul>
+            <li>☐ Entrada de blog publicada y accesible públicamente.</li>
+            <li>☐ Documentación estructurada según la plantilla solicitada.</li>
+            <li>☐ Evidencia de control de versiones.</li>
+            <li>☐ Enlace al repositorio público.</li>
+            <li>☐ Reflexión sobre feedback radicalmente sincero.</li>
+            <li>☐ Aprendizajes relacionados con mentalidad de crecimiento.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>Proyecto académico — Mentalidad de Crecimiento y Comunicación en Entornos Digitales</p>
+    <p>Documentación de aprendizaje basada en una experiencia real de emprendimiento.</p>
+</footer>
+
+</body>
+</html>
